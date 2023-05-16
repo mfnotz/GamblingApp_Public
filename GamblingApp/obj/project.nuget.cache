@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cq1pjcYRwRKBHsTKSIbsUrl9SLCYRIp+mqyF/CjgTuqELOP79otxI2k/hVyqaeJDZRWNpqjmymFOKqIiLCmFgQ==",
+  "dgSpecHash": "rGOGfULOZ34FD/J7QX2suDGmxbFryjPmXgdH1S1LbippK7tnYs7bnaC7MocWIQTsflkuaipRAoA5WMbxyP9ywA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj",
+  "projectFilePath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\te436749\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -14,6 +14,7 @@
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnet.webpages\\3.2.9\\microsoft.aspnet.webpages.3.2.9.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.16\\microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.16\\microsoft.aspnetcore.authentication.negotiate.6.0.16.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",

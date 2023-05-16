@@ -5,6 +5,6 @@ namespace Core.Abstractions.Services
 {
     public interface IBetService : IBaseService<Bet, BetDTO> //
     {
-        public Task<BetResult> PlaceBet(Bet bet, UserDTO userDTO);
+        public Task<BetResult> PlaceBet(Bet bet, PlayerDTO userDTO);
     }
 }

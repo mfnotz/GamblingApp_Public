@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8y4hQ/FkaUwHA1CyEV9UzL32CFY7xQnjVbUh5snsjiAaqkeBfT/ufEUMFBNNDZgrnvziKMP/fY9ksqfGWb20RQ==",
+  "dgSpecHash": "qrV5p+ph2B25YZsReJ6klOAeFXKNnyBRtnYZzdzbhI4h0wnmQCSm9nEm4mXNzyCvkGI6JarMbFEDoaRU5xd1OQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\te436749\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

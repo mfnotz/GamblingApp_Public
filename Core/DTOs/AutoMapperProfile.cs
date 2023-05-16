@@ -10,8 +10,9 @@ namespace Core.DTOs
         {
             CreateMap<BetDTO, Bet>();
             CreateMap<Bet, BetDTO>();
-            CreateMap<User, UserDTO>();
-            CreateMap<UserDTO, User>();
+            CreateMap<Player, PlayerDTO>();
+            CreateMap<PlayerDTO, Player>();
+            CreateMap<UserInfo, UserInfoDTO>();
         }
     }
 }

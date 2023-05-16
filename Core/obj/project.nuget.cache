@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E/Y2N4YLIUEa6BZej1VMgaxH7TOai6S2Hgr50et3GNuc7IzduzKWBtCyEOdOu4qjo4L0M6YmH0J1HRzWFNfHqA==",
+  "dgSpecHash": "0NOi1mB61boXu6B9fMhAQp1QT+1VVad+rz5jFYkkvGeihNFhOGX7MzMrFYoBQUQEedGJG7xonJV50u/OoohMBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\te436749\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\te436749\\.nuget\\packages\\microsoft.aspnet.mvc\\5.2.9\\microsoft.aspnet.mvc.5.2.9.nupkg.sha512",

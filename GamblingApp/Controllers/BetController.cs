@@ -2,34 +2,36 @@ using Core.Abstractions.Controllers;
 using Core.Abstractions.Services;
 using Core.DTOs;
 using Core.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class BetController : BaseController<Bet, BetDTO>, IBetController
     {
         private readonly IBetService _betService;
-        private readonly IUserService _userService;
+        private readonly IPlayerService _userService;
 
-        public BetController(IBetService betService, IUserService userService, IConfiguration configuration, Serilog.ILogger logger) : base(betService, configuration, logger)
+        public BetController(IBetService betService, IPlayerService userService, IConfiguration configuration, Serilog.ILogger logger) : base(betService, configuration, logger)
         {
             _betService = betService;
             _userService = userService;
         }
 
-        [HttpPost("bet")]
+        [HttpPost("PlaceBet")]
         public async Task<IActionResult> PlaceBetAsync([FromBody] Bet bet)
         {
             try
             {
-                var userName = GetWindowsUsername();
-                var user = _userService.GetBy(items => items.Where(predicate: entity => entity.UserName == userName), null, null).Result.FirstOrDefault();
-
+                var player = _userService.Get(int.Parse(User.Claims.First(i => i.Type == "UserId").Value)).Result;
+                
                 try
                 {
-                    return Ok(await _betService.PlaceBet(bet, user));
+                    return Ok(await _betService.PlaceBet(bet, player));
                 }
                 catch (Exception ex)
                 {

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Core.DTOs
 {
-    public class UserDTO : BaseEntityDTO
+    public class PlayerDTO : BaseEntityDTO
     {
-        public String UserName { get; set; }
+        public int UserId { get; set; }
         public int Credit { get; set; }
     }
 }

@@ -12,9 +12,9 @@ using System.Threading.Tasks;
 
 namespace Repositories
 {
-    public class UserRepository : BaseRepository<User>, IUserRepository
+    public class PlayerRepository : BaseRepository<Player>, IPlayerRepository
     {
-        public UserRepository(ILogger logger, IGamblingContext context) : base(logger, context)
+        public PlayerRepository(ILogger logger, IGamblingContext context) : base(logger, context)
         {
         }
     }

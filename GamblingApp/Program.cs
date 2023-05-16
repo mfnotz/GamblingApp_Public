@@ -3,12 +3,14 @@ using Core.Abstractions.Repository;
 using Core.Abstractions.Services;
 using Core.DTOs;
 using Core.Helpers;
-using Microsoft.AspNetCore.Authentication.Negotiate;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Repositories;
 using Repository;
 using Serilog;
 using Services;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,18 +22,33 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
-builder.Services.AddHttpContextAccessor(); 
-builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
-   .AddNegotiate();
-
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            //define which claim requires to check
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            //store the value in appsettings.json
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
 // Repositories
 builder.Services.AddTransient<IBetRepository, BetRepository>();
-builder.Services.AddTransient<IUserRepository, UserRepository>();
+builder.Services.AddTransient<IPlayerRepository, PlayerRepository>();
+builder.Services.AddTransient<IUserInfoRepository, UserInfoRepository>();
 
 // Business
 builder.Services.AddTransient<IBetService, BetService>();
-builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IPlayerService, PlayerService>();
 builder.Services.AddTransient<IRandomNumberGenerator, RandomNumberGenerator>();
+builder.Services.AddTransient<IUserInfoService, UserInfoService>();
 
 // EF
 string connectionString = builder.Configuration.GetConnectionString("SQLServer");

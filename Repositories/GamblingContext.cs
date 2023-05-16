@@ -1,7 +1,6 @@
 ﻿using Core.Abstractions.Repository;
 using Core.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
 
 namespace Repository
 {
@@ -19,11 +18,23 @@ namespace Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Player>()
+            .HasKey(p => p.Id);
+
+            modelBuilder.Entity<UserInfo>()
+                .HasKey(ui => ui.Id);
+            modelBuilder.Entity<Bet>()
+                .HasKey(b => b.Id);
+
+            modelBuilder.Entity<UserInfo>()
+                .HasOne(ui => ui.Player)
+                .WithOne(p => p.User)
+                .HasForeignKey<Player>(p => p.UserId);
         }
 
         public DbSet<Bet> Bet { get; set; }
-        public DbSet<User> User { get; set; }
+        public DbSet<Player> Player { get; set; }
+        public DbSet<UserInfo> UserInfo { get; set;}
 
     }
 }

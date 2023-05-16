@@ -198,6 +198,25 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.16": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.10.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.AspNetCore.Authentication.Negotiate/6.0.16": {
         "type": "package",
         "dependencies": {
@@ -3627,6 +3646,7 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Core": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.16",
           "Microsoft.AspNetCore.Authentication.Negotiate": "6.0.16",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.16",
           "Microsoft.EntityFrameworkCore": "7.0.5",
@@ -3921,6 +3941,21 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.Core.xml",
         "microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/6.0.16": {
+      "sha512": "T4AkjPXOYDqDnfb8PRRHNbB2ozLg9J7CsRZ+jH1MfQGshkFosdwja9c4+QVbKm+1qeLPxul+3weSz+DEvFkA5w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.16",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.xml",
+        "microsoft.aspnetcore.authentication.jwtbearer.6.0.16.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Negotiate/6.0.16": {
@@ -10448,11 +10483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\UnitTesting\\UnitTesting.csproj",
+      "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\UnitTesting\\UnitTesting.csproj",
       "projectName": "UnitTesting",
-      "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\UnitTesting\\UnitTesting.csproj",
+      "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\UnitTesting\\UnitTesting.csproj",
       "packagesPath": "C:\\Users\\te436749\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\UnitTesting\\obj\\",
+      "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\UnitTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\te436749\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10469,11 +10504,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj": {
-              "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj"
+            "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj": {
+              "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj"
             },
-            "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj"
+            "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj": {
+              "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj"
             }
           }
         }

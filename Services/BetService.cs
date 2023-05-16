@@ -15,11 +15,11 @@ namespace Services
     {
         internal ILogger _logger { get; set; }
         internal IBetRepository _betRepository { get; set; }
-        internal IUserService _userService { get; set; }
+        internal IPlayerService _userService { get; set; }
         internal IMapper _mapper { get; set; }
         internal IRandomNumberGenerator _randomNumberGenerator { get; set; }
 
-        public BetService(ILogger logger, IBetRepository betRepository, IUserService userService, IRandomNumberGenerator randomNumberGenerator, IMapper mapper)
+        public BetService(ILogger logger, IBetRepository betRepository, IPlayerService userService, IRandomNumberGenerator randomNumberGenerator, IMapper mapper)
         {
             _logger = logger;
             _betRepository = betRepository;
@@ -28,7 +28,7 @@ namespace Services
             _mapper = mapper;
         }
 
-        public async Task<BetResult> PlaceBet(Bet bet, UserDTO userDTO)
+        public async Task<BetResult> PlaceBet(Bet bet, PlayerDTO userDTO)
         {
             // Check if player is allowed to play
             if (userDTO == null)

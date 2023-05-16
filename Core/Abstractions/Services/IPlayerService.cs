@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Core.Abstractions.Services
 {
-    public interface IUserService : IBaseService<User, UserDTO>
+    public interface IPlayerService : IBaseService<Player, PlayerDTO>
     {
     }
 }

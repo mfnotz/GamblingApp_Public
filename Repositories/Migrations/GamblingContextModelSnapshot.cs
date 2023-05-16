@@ -50,7 +50,7 @@ namespace Repositories.Migrations
                     b.ToTable("Bet");
                 });
 
-            modelBuilder.Entity("Core.Models.User", b =>
+            modelBuilder.Entity("Core.Models.Player", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,13 +61,60 @@ namespace Repositories.Migrations
                     b.Property<int>("Credit")
                         .HasColumnType("int");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Player");
+                });
+
+            modelBuilder.Entity("Core.Models.UserInfo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("Core.Models.Player", b =>
+                {
+                    b.HasOne("Core.Models.UserInfo", "User")
+                        .WithOne("Player")
+                        .HasForeignKey("Core.Models.Player", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Core.Models.UserInfo", b =>
+                {
+                    b.Navigation("Player")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -16,7 +16,7 @@ namespace Services.Tests
     {
         private Mock<ILogger> mockLogger = new Mock<ILogger>();
         private Mock<IBetRepository> mockBetRepository = new Mock<IBetRepository>();
-        private Mock<IUserService> mockUserService = new Mock<IUserService>();
+        private Mock<IPlayerService> mockUserService = new Mock<IPlayerService>();
         private Mock<IRandomNumberGenerator> mockRandomNumberGenerator = new Mock<IRandomNumberGenerator>();
         private IMapper mockMapper;
         private BetService betService;
@@ -37,7 +37,7 @@ namespace Services.Tests
         public async Task PlaceBet_InvalidBetAmount_ThrowsException()
         {
             // Arrange
-            var userDTO = new UserDTO { Id = 1, Credit = 100 };
+            var userDTO = new PlayerDTO { Id = 1, Credit = 100 };
             var bet = new Bet { BetAmount = 0, BetChoice = 5 };
 
             // Act and Assert
@@ -48,7 +48,7 @@ namespace Services.Tests
         public async Task PlaceBet_InvalidBetChoice_ThrowsException()
         {
             // Arrange
-            var userDTO = new UserDTO { Id = 1, Credit = 100 };
+            var userDTO = new PlayerDTO { Id = 1, Credit = 100 };
             var bet = new Bet { BetAmount = 10, BetChoice = 11 };
 
             // Act and Assert
@@ -59,7 +59,7 @@ namespace Services.Tests
         public async Task PlaceBet_InsufficientBalance_ThrowsException()
         {
             // Arrange
-            var userDTO = new UserDTO { Id = 1, Credit = 100 };
+            var userDTO = new PlayerDTO { Id = 1, Credit = 100 };
             var bet = new Bet { BetAmount = 200, BetChoice = 5 };
 
             // Act and Assert
@@ -70,7 +70,7 @@ namespace Services.Tests
         public async Task PlaceBet_ValidBet_ReturnsWinResult()
         {
             // Arrange
-            var userDTO = new UserDTO { Id = 1, Credit = 100 };
+            var userDTO = new PlayerDTO { Id = 1, Credit = 100 };
             var bet = new Bet { BetAmount = 10, BetChoice = 5 };
             var currentCredit = userDTO.Credit;
 

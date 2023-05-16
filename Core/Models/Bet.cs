@@ -9,6 +9,6 @@ namespace Core.Models
         public int BetAmount { get; set; }
         public int BetChoice { get; set; }
         public int BetActualResult { get; set; }
-        public DateTime BetDoneAt { get; set; }
+        public DateTime BetDoneAt { get; set; } = DateTime.Now;
     }
 }

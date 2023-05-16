@@ -3,7 +3,7 @@ using Core.Models;
 
 namespace Core.Abstractions.Repository
 {
-    public interface IUserRepository : IBaseRepository<User>
+    public interface IUserInfoRepository : IBaseRepository<UserInfo>
     {
     }
 }

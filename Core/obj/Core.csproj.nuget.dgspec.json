@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj": {}
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj": {
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\te436749\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\obj\\",
+        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\te436749\\AppData\\Roaming\\NuGet\\NuGet.Config",

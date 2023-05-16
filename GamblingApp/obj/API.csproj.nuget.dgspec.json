@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj": {}
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj": {
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\te436749\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\obj\\",
+        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\te436749\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj": {
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj",
+        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\API.csproj",
+        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\API.csproj",
         "packagesPath": "C:\\Users\\te436749\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\GamblingApp\\obj\\",
+        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\GamblingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\te436749\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -101,14 +101,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj"
+              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj"
               },
-              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\Repositories.csproj"
+              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\Repositories.csproj"
               },
-              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj"
+              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj": {
+                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj"
               }
             }
           }
@@ -130,6 +130,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
             },
             "Microsoft.AspNetCore.Authentication.Negotiate": {
               "target": "Package",
@@ -201,14 +205,14 @@
         }
       }
     },
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\Repositories.csproj": {
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\Repositories.csproj",
+        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\te436749\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Repositories\\obj\\",
+        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\te436749\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -225,8 +229,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj"
+              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj"
               }
             }
           }
@@ -274,14 +278,14 @@
         }
       }
     },
-    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj": {
+    "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\Services.csproj",
+        "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\te436749\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Services\\obj\\",
+        "outputPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\te436749\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -298,8 +302,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp\\Core\\Core.csproj"
+              "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\te436749\\Source\\Repos\\Personal\\GamblingApp_Public\\Core\\Core.csproj"
               }
             }
           }
